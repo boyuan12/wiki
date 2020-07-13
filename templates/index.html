@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+{% block main %}
+    <h1>All entries</h1>
+    {% for e in entries %}
+        <div>
+            <a href="/wiki/{{ e }}">{{ e }}</a>
+        </div>
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block main %}
+    <h1>Edit {{ title }}</h1>
+    <form action="/edit/{{ title }}" method="POST">
+        <div class="form-group">
+            <label for="contents">Contents</label>
+            <textarea class="form-control" id="contents" rows="3" col="200" name="contents">{{ contents }}</textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+{% endblock %}

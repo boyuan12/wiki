@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>Wiki</title>
+</head>
+<body>
+    <div class="row">
+        <div class="col-3" id="nav-left" class="bg-light">
+            <h1>Wiki</h1>
+            <a href="/">Home</a> <br> <br>
+            <a href="/create">Create new page</a> <br> <br>
+            <a href="/random">Random page</a> <br> <br>
+            <form class="form-inline my-2 my-lg-0" action="/search">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="s">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+        <div class="col-9">
+            {% block main %}{% endblock %}
+        </div>
+    </div>
+</body>
+</html>

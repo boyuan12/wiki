@@ -1,0 +1,13 @@
+#nav-left {
+    background-color: gray;
+    height: 100vh;
+    padding-left: 50px;
+}
+
+.nav-link {
+    font-size: 30px;
+}
+
+input[type="text"] {
+    width: 60%;
+}
